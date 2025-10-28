@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validação de Campos com Js</title>
+
+    <!--
+        Folha de estilo principal
+        Contém as definições visuais do formulário (cores, bordas, layout)
+        Localização: /css/style.css
+    -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--
+    Container principal do formulário
+    Centraliza e agrupa todos os campos de entrada
+-->
+<div class="container">
+    <h2>Formulário de Tratamento de Campos</h2>
+
+    <!--
+        Campo: Idade
+        Descrição: Idade do usuário (apenas números inteiros)
+        Tipo: number (controlado via JavaScript)
+        Máscara/Formato: Nenhum
+        Regras: Obrigatório, máximo 3 dígitos
+        Função JS relacionada: permitirApenasNumeros()
+    -->
+    <label for="idade">Idade (número inteiro):</label>
+    <input type="text" id="idade" placeholder="Digite a idade" maxlength="3">
+
+    <!--
+        Campo: Quantidade
+        Descrição: Quantidade de itens ou unidades (número inteiro)
+        Tipo: number (controlado via JavaScript)
+        Máscara/Formato: Nenhum
+        Regras: Obrigatório, máximo 5 dígitos
+        Função JS relacionada: permitirApenasNumeros()
+    -->
+    <label for="quantidade">Quantidade (número inteiro):</label>
+    <input type="text" id="quantidade" placeholder="Digite a quantidade" maxlength="5">
+
+    <!--
+        Campo: Data de Nascimento
+        Descrição: Data de nascimento do usuário
+        Tipo: string (formato controlado via máscara JS)
+        Máscara/Formato: dd/mm/aaaa
+        Regras: Obrigatório, 10 caracteres
+        Função JS relacionada: formatarData()
+    -->
+    <label for="dataNascimento">Data de nascimento (dd/mm/aaaa):</label>
+    <input type="text" id="dataNascimento" oninput="formatarData(this)" placeholder="dd/mm/aaaa" maxlength="10">
+
+    <!--
+        Campo: CPF
+        Descrição: Cadastro de Pessoa Física (documento brasileiro)
+        Tipo: string
+        Máscara/Formato: 000.000.000-00
+        Regras: Obrigatório, 14 caracteres
+        Função JS relacionada: formatarCPF()
+    -->
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14">
+
+    <!--
+        Campo: Telefone
+        Descrição: Telefone de contato
+        Tipo: string
+        Máscara/Formato: (00) 00000-0000
+        Regras: Obrigatório, 15 caracteres
+        Função JS relacionada: formatarTelefone()
+    -->
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" placeholder="(00) 00000-0000" maxlength="15">
+
+    <!--
+        Campo: CEP
+        Descrição: Código de Endereçamento Postal
+        Tipo: string
+        Máscara/Formato: 00000-000
+        Regras: Obrigatório, 9 caracteres
+        Função JS relacionada: formatarCEP()
+    -->
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" placeholder="00000-000" maxlength="9">
+
+    <!--
+        Botão de envio do formulário
+        Ação: dispara validação e exibe mensagem de sucesso ou erro
+        Função JS relacionada: marcarCampoInvalido() e validação no evento 'click'
+    -->
+    <button id="enviar">Enviar</button>
+</div>
+
+<!--
+    Script principal de validação
+    Contém todas as funções JavaScript responsáveis pelas máscaras,
+    validações e feedback visual dos campos.
+    Localização: /js/script.js
+-->
+<script src="js/script.js"></script>
+</body>
+</html>

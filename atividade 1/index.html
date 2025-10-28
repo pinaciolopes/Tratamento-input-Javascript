@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de campos</title>
+
+    <style>
+    body{
+        font-family: arial, sans-serif;
+        background-color: #f2f2f2;
+        padding: 30px;
+    }
+
+    label{
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    input{
+        padding: 8px;
+        width: 250px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+    </style>
+</head>
+<body>
+    <h2>Tratamento de Dados com JavaScript</h2>
+    <label for="idade">idade(numero inteiro):</label>
+    <input type="text" id="idade" placeholder="Digite a idade" maxlength="3">
+
+    <label for="quantidade">Quantidade(numero inteiro):</label>
+    <input type="text" id="quantidade" placeholder="Digite a quantidade" maxlength="5">
+
+    <label for="dataNascimento">Data de Nascimento(dd/mm/aaaa):</label>
+    <input type="text" id="dataNascimento" oninput="formatarData(this)" placeholder="dd/mm/aaaa" maxlength="10">
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* -----------------------------------------------------------
+   Estilos gerais da página
+   - Define fonte, cor de fundo e alinhamento principal
+   - Usa flexbox para centralizar o conteúdo verticalmente
+   ----------------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;    /* Define a fonte principal do site */
+    background-color: #f2f2f2;         /* Cor de fundo cinza-claro */
+    display: flex;                     /* Usa flexbox para alinhamento */
+    justify-content: center;           /* Centraliza o conteúdo na horizontal */
+    align-self: flex-start;            /* Alinha o container no topo do eixo vertical */
+    height: 100vh;                     /* Ocupa 100% da altura da tela */
+    padding-top: 40px;                 /* Espaçamento superior para afastar do topo */
+}
+
+/* -----------------------------------------------------------
+   Container principal do formulário
+   - Cria uma área branca centralizada
+   - Adiciona espaçamento, bordas e sombra
+   ----------------------------------------------------------- */
+.container {
+    background-color: #fff;            /* Fundo branco do formulário */
+    padding: 25px 35px;                /* Espaçamento interno */
+    border-radius: 10px;               /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+    width: 320px;                      /* Largura fixa */
+}
+
+/* -----------------------------------------------------------
+   Título principal (h2)
+   - Centraliza e estiliza o texto do cabeçalho
+   ----------------------------------------------------------- */
+h2 {
+    text-align: center;                /* Centraliza o texto */
+    margin-bottom: 25px;               /* Espaçamento inferior */
+    color: #333;                       /* Cor de texto cinza escuro */
+}
+
+/* -----------------------------------------------------------
+   Rótulos dos campos (labels)
+   - Deixa os rótulos em negrito e separados dos inputs
+   ----------------------------------------------------------- */
+label {
+    display: block;                    /* Faz o label ocupar uma linha inteira */
+    margin-top: 15px;                  /* Espaço acima de cada label */
+    font-weight: bold;                 /* Deixa o texto em negrito */
+    color: #444;                       /* Tom de cinza médio */
+}
+
+/* -----------------------------------------------------------
+   Campos de entrada (inputs)
+   - Define tamanho, bordas e espaçamento
+   - Inclui transição para efeito suave ao focar
+   ----------------------------------------------------------- */
+input {
+    width: 100%;                       /* Ocupa toda a largura disponível */
+    padding: 8px;                      /* Espaçamento interno */
+    border-radius: 6px;                /* Bordas arredondadas */
+    border: 1px solid #ccc;            /* Borda cinza */
+    margin-top: 5px;                   /* Espaço entre label e campo */
+    transition: 0.3s;                  /* Transição suave em efeitos de foco */
+}
+
+/* -----------------------------------------------------------
+   Efeito visual quando o campo está em foco (input:focus)
+   ----------------------------------------------------------- */
+input:focus {
+    border-color: #007bff;             /* Muda a cor da borda para azul */
+    outline: none;                     /* Remove o contorno padrão do navegador */
+}
+
+/* -----------------------------------------------------------
+   Classe "invalido"
+   - Usada para indicar erro de validação nos campos
+   - Aplicada via JavaScript quando houver dados incorretos
+   ----------------------------------------------------------- */
+input.invalido {
+    border-color: red;                 /* Borda vermelha indicando erro */
+    background-color: #ffe6e6;         /* Fundo levemente rosado */
+}
+
+/* -----------------------------------------------------------
+   Botão de envio (Enviar)
+   - Estiliza cor, tamanho e aparência do botão principal
+   ----------------------------------------------------------- */
+button {
+    margin-top: 20px;                  /* Espaço acima do botão */
+    width: 100%;                       /* Ocupa toda a largura do container */
+    padding: 10px;                     /* Espaçamento interno */
+    border: none;                      /* Remove a borda padrão */
+    border-radius: 6px;                /* Bordas arredondadas */
+    background-color: #007bff;         /* Cor azul padrão */
+    color: white;                      /* Texto branco */
+    font-size: 16px;                   /* Tamanho do texto */
+    cursor: pointer;                   /* Cursor de mão ao passar o mouse */
+    transition: 0.3s;                  /* Transição suave na cor */
+}
+
+/* -----------------------------------------------------------
+   Efeito de hover no botão
+   - Escurece o botão ao passar o mouse
+   ----------------------------------------------------------- */
+button:hover {
+    background-color: #0056b3;         /* Azul mais escuro no hover */
+}
