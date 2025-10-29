@@ -10,15 +10,25 @@ O repositório contém duas atividades práticas, cada uma explorando diferentes
 📂 Estrutura do Projeto
 
 ├── atividade 1/              → Primeira atividade de manipulação de input
+
 │   ├── index.html
+
 │   └── js/script.js
+
 │
+
 ├── atividade 2/              → Segunda atividade com aplicação de máscara e estilo
+
 │   ├── index.html
+
 │   ├── css/style.css
+
 │   └── js/script.js
+
 │
+
 ├── package.json              → Configurações do projeto (se aplicável)
+
 └── tratamento_input_js.iml   → Arquivo de configuração do ambiente de desenvolvimento
 
 ⚙️ Tecnologias Utilizadas
@@ -44,9 +54,11 @@ Boas práticas de organização e documentação de projetos front-end
 🚀 Como Executar
 
 1.Faça o download do repositório:
+
 git clone https://github.com/seu-usuario/Tratamento-input-Javascript-main.git
 
 2.Acesse a pasta da atividade desejada:
+
 cd "atividade 1"
 
 3.Abra o arquivo index.html diretamente no navegador para testar.
@@ -59,5 +71,6 @@ Sinta-se à vontade para modificar e usar como referência em seus próprios est
 ✍️ Autor
 
 [Pablo Phelipe Inacio Lopes]
+
 Projeto desenvolvido com o objetivo de praticar JavaScript, entender o tratamento de inputs e máscaras e aprimorar habilidades de documentação, sob orientação do professor João Keslei Carvalho Viana.
 
